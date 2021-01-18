@@ -13,36 +13,8 @@ def parce(ip):
 	i = 0
 	for item in items:
 		i += 1
-		true = True
-		while true:
-			global spisok
-			spisok = list(item.getText()) 
-			spisok.remove("\n")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			spisok.remove(" ")
-			if spisok[0] == " ":
-				print(spisok)
-			else:
-				break
-		sp = ""
-		for spisoks in spisok:
-			sp += spisoks
-		print("[TorrentName] " + sp)
+		print("[TorrentName] " + item.getText().strip())
 		time.sleep(0.1)
-		if i == 20:
+		if i == 30:
 			break
  ##https://iknowwhatyoudownload.com
